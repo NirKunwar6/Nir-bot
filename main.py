@@ -107,8 +107,8 @@ Your purpose is to help Nir become a disciplined champion.
 """
 
 # Initialize APIs
-bot = telebot.TeleBot(TELEGRAM_TOKEN)
-genai.configure(api_key=GEMINI_API_KEY)
+bot = telebot.TeleBot(8530604428:AAF839QUONUoqKAsAEXKHVFTGw_jcSRTGk0)
+genai.configure(api_key=AIzaSyBLqJE-eMFr91GMrxmjJaIzdU19WD9u_YM)
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     system_instruction=SYSTEM_INSTRUCTION
