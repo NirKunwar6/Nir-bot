@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # 1. SETUP YOUR KEYS (Use GitHub Secrets for these in production)
 TELEGRAM_TOKEN = "8530604428:AAF839QUONUoqKAsAEXKHVFTGw_jcSRTGk0"
-GEMINI_API_KEY = "AIzaSyBLqJE-eMFr91GMrxmjJaIzdU19WD9u_YM"
+GEMINI_API_KEY = "AIzaSyDnJiYEj-jonx6lC8Gx716otXB8t-gsyvs"
 
 # 2. YOUR SYSTEM PROMPT (The "Brain")
 SYSTEM_INSTRUCTION = """
@@ -107,8 +107,8 @@ Your purpose is to help Nir become a disciplined champion.
 """
 
 # Initialize APIs
-bot = telebot.TeleBot(8530604428:AAF839QUONUoqKAsAEXKHVFTGw_jcSRTGk0)
-genai.configure(api_key=AIzaSyBLqJE-eMFr91GMrxmjJaIzdU19WD9u_YM)
+bot = telebot.TeleBot(TELEGRAM_TOKEN)
+genai.configure(GEMINI_API_KEY)
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     system_instruction=SYSTEM_INSTRUCTION
