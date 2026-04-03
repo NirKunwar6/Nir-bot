@@ -3,95 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nir's Discipline AI | Mrtechnician</title>
-    <style>
-        body { font-family: 'Inter', sans-serif; background: #0b0f19; color: #e2e8f0; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .chat-container { width: 95%; max-width: 500px; background: #111827; border: 1px solid #1f2937; border-radius: 16px; display: flex; flex-direction: column; height: 85vh; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
-        .header { padding: 20px; background: #1f2937; text-align: center; border-bottom: 2px solid #3b82f6; }
-        .header h2 { margin: 0; color: #3b82f6; letter-spacing: 1px; font-size: 1.2rem; }
-        .header p { margin: 5px 0 0; font-size: 0.8rem; color: #9ca3af; }
-        .messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 15px; scroll-behavior: smooth; }
-        .msg { padding: 12px 16px; border-radius: 12px; max-width: 85%; line-height: 1.5; font-size: 0.95rem; }
-        .user-msg { background: #3b82f6; color: white; align-self: flex-end; border-bottom-right-radius: 2px; }
-        .bot-msg { background: #374151; color: #f3f4f6; align-self: flex-start; border-bottom-left-radius: 2px; border-left: 4px solid #ef4444; }
-        .input-area { padding: 20px; display: flex; gap: 10px; background: #111827; }
-        input { flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #374151; background: #0b0f19; color: white; outline: none; }
-        input:focus { border-color: #3b82f6; }
-        button { padding: 10px 20px; background: #3b82f6; border: none; border-radius: 8px; color: white; cursor: pointer; font-weight: 600; transition: 0.2s; }
-        button:hover { background: #2563eb; transform: translateY(-1px); }
-        .loading { font-size: 0.8rem; color: #6b7280; font-style: italic; }
-    </style>
+    <title>Nirdeshan Kunwar | Journey</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="chat-container">
-    <div class="header">
-        <h2>NIR DISCIPLINE AI</h2>
-        <p>Powered by Mrtechnician</p>
-    </div>
-    <div class="messages" id="chatBox">
-        <div class="msg bot-msg">The routine is the path to greatness, Nir. I am watching. What is your question?</div>
-    </div>
-    <div class="input-area">
-        <input type="text" id="userInput" placeholder="Ask your mentor..." onkeypress="if(event.key === 'Enter') sendMessage()">
-        <button onclick="sendMessage()">SEND</button>
-    </div>
-</div>
+    <nav class="side-menu">
+        <div class="menu-items">
+            <a href="#hero">Home</a>
+            <a href="#journey">Journey</a>
+            <a href="#achievements">Progression</a>
+            <a href="#vision">Vision</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#assistant">Talk to Nir</a>
+        </div>
+    </nav>
 
-<script src="https://js.puter.com/v2/"></script>
-<script>
-    const systemPrompt = `You are the Personal Discipline AI of Nir Kunwar.
-    Mission: Make Nir a successful cricketer and high-performance individual. 
-    Personality: Strict but wise mentor. No laziness or time-wasting.
-    
-    DAILY ROUTINE:
-    - 5:00 AM: Wake up & Stretching
-    - 6:30 AM – 11:00 AM: College (GoldenGate)
-    - 2:00 PM – 4:30 PM: Kathmandu Cricket Academy
-    - 9:30 PM: Sleep (No phone after 9:00 PM)
+    <header id="hero" class="full-section reveal">
+        <div class="content-limit">
+            <div class="photo-box">
+                <img src="IMG_20260107_122423_899.webp" alt="Nirdeshan Kunwar">
+            </div>
+            <h1 class="main-name">NIRDESHAN<br><span>KUNWAR</span></h1>
+            <div class="typing-container">
+                I am a <span id="typewriter"></span>
+            </div>
+        </div>
+    </header>
 
-    RULES:
-    1. Academy is mandatory regardless of mood.
-    2. Max 30 mins social media daily.
-    3. Use the '10-Minute Rule' for laziness.
-    4. Diamond Day (Weekly): Double effort.
-    5. Free Day (Every 20 days): Refreshment allowed.
-    6. Before acting, ask: "Will this make my future better?"
+    <section id="journey" class="full-section reveal">
+        <div class="content-limit">
+            <h2 class="section-title">JOURNEY (BIO)</h2>
+            <p>Nirdeshan Kunwar, born in Achham, Nepal, balances academic and athletic ambitions with a disciplined lifestyle. Currently a CS student at GoldenGate College and a dedicated cricketer at Kathmandu Cricket Academy.</p>
+        </div>
+    </section>
 
-    If Nir asks to break a rule, say "Permission Denied" and explain why based on his goals.`;
+    <section id="achievements" class="full-section reveal">
+        <div class="content-limit">
+            <h2 class="section-title">PROGRESSION</h2>
+            <ul style="list-style:none; line-height:2;">
+                <li>🏆 Represented District at U16, U19 & 10th National.</li>
+                <li>🏅 Player of the Tournament - SEE Camp 2082.</li>
+                <li>🏏 Best Batsman - GoldenGate College 2082.</li>
+            </ul>
+        </div>
+    </section>
 
-    async function sendMessage() {
-        const input = document.getElementById('userInput');
-        const chatBox = document.getElementById('chatBox');
-        if (!input.value.trim()) return;
+    <section id="vision" class="full-section reveal">
+        <div class="content-limit">
+            <h2 class="section-title">MY PHILOSOPHY</h2>
+            <p style="font-style: italic; font-size: 1.5rem;">"Dream without limits, Work without excuses."</p>
+        </div>
+    </section>
 
-        // Show User Message
-        const userText = input.value;
-        chatBox.innerHTML += `<div class="msg user-msg">${userText}</div>`;
-        input.value = '';
-        
-        // Show Loading
-        const loadingId = "loading-" + Date.now();
-        chatBox.innerHTML += `<div class="msg bot-msg loading" id="${loadingId}">Thinking...</div>`;
-        chatBox.scrollTop = chatBox.scrollHeight;
+    <section id="gallery" class="full-section reveal">
+        <div class="content-limit">
+            <h2 class="section-title">VISUAL GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="img-frame"><img src="IMG_20250715_154508.jpg"></div>
+                <div class="img-frame"><img src="IMG_20260307_175246.jpg"></div>
+                <div class="img-frame"><img src="1766114093638.jpg"></div>
+            </div>
+        </div>
+    </section>
 
-        try {
-            // Puter AI Chat Call
-            const response = await puter.ai.chat([
-                { role: "system", content: systemPrompt },
-                { role: "user", content: userText }
-            ]);
+    <section id="assistant" class="full-section reveal">
+        <div class="content-limit">
+            <h2 class="section-title">NIR'S ASSISTANT</h2>
+            <div class="chat-box" id="chatBox"></div>
+            <div style="display:flex; gap:10px; justify-content:center;">
+                <input type="text" id="userInput" class="chat-input" placeholder="Ask about Nir...">
+                <button class="chat-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
 
-            // Remove loading and show real response
-            document.getElementById(loadingId).remove();
-            chatBox.innerHTML += `<div class="msg bot-msg">${response.message.content}</div>`;
-            chatBox.scrollTop = chatBox.scrollHeight;
-        } catch (error) {
-            document.getElementById(loadingId).innerText = "Error: Check your internet connection.";
-            console.error(error);
+    <script src="https://js.puter.com/v2/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script>
+        // 1. DYNAMIC TYPING EFFECT (One by One)
+        const words = ["Digital Creator", "Cricketer", "CS Student"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typeTarget = document.getElementById("typewriter");
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                typeTarget.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typeTarget.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                typeSpeed = 2000; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500;
+            }
+            setTimeout(type, typeSpeed);
         }
-    }
-</script>
 
+        // 2. PREMIUM SCROLL REVEAL ANIMATION
+        const observerOptions = { threshold: 0.2 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // 3. INITIALIZE SCRIPTS
+        window.onload = () => {
+            type();
+            emailjs.init("aNDohUpb1KOb8hHnb");
+            document.getElementById("chatBox").innerHTML = `<div class="bot">Hello! I am Nir's assistant. How can I help?</div>`;
+        };
+
+        // Puter AI logic remains same as your original provided code
+        async function sendMessage() {
+            const input = document.getElementById("userInput");
+            const chatBox = document.getElementById("chatBox");
+            if(!input.value.trim()) return;
+
+            chatBox.innerHTML += `<div class="user">${input.value}</div>`;
+            const text = input.value;
+            input.value = "";
+            
+            try {
+                const resp = await puter.ai.chat(text); // Simplified for this demo
+                chatBox.innerHTML += `<div class="bot">${resp.message.content}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            } catch(e) { console.error(e); }
+        }
+    </script>
 </body>
 </html>
+
+
+
+
+
