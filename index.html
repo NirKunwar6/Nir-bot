@@ -66,21 +66,79 @@
         <button onclick="nav('participation-ui')" class="btn-main text-xl">PROCEED TO CLAIM</button>
     </div>
 
-    <div id="participation-ui" class="min-h-screen flex items-center justify-center p-6">
-        <div class="bg-white p-10 rounded-[40px] shadow-2xl w-full max-w-md border">
-            <h2 class="text-2xl font-black mb-6 uppercase tracking-tight daraz-orange">Participant Info</h2>
-            <input type="text" id="c-name" placeholder="Full Name (As per ID)">
-            <input type="text" id="c-loc" placeholder="Current Location (City)">
-            <select id="c-gender">
-                <option value="" disabled selected>Select Gender</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>
-            <input type="number" id="c-phone" placeholder="Contact Number (98XXXXXXXX)">
-            <button onclick="nav('login-modal')" class="btn-main mt-4">NEXT STEP</button>
+   <div id="participation-ui" class="min-h-screen flex items-center justify-center p-6 bg-gray-100">
+    
+    <div class="bg-white p-10 rounded-[40px] shadow-2xl w-full max-w-md border">
+
+        <h2 class="text-2xl font-black mb-6 uppercase tracking-tight daraz-orange">
+            Participant Info
+        </h2>
+
+        <!-- Full Name -->
+        <input type="text" id="c-name" placeholder="Full Name (As per ID)">
+
+        <!-- Location -->
+        <input type="text" id="c-loc" placeholder="Current Location (City)">
+
+        <!-- Province -->
+        <select id="c-province">
+            <option value="" disabled selected>Select Province</option>
+            <option>Koshi</option>
+            <option>Madhesh</option>
+            <option>Bagmati</option>
+            <option>Gandaki</option>
+            <option>Lumbini</option>
+            <option>Karnali</option>
+            <option>Sudurpashchim</option>
+        </select>
+
+        <!-- Gender -->
+        <select id="c-gender">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <!-- DOB -->
+        <input type="date" id="c-dob">
+
+        <!-- Email -->
+        <input type="email" id="c-email" placeholder="Email Address">
+
+        <!-- Phone -->
+        <input type="number" id="c-phone" placeholder="Contact Number (98XXXXXXXX)">
+
+        <!-- Occupation -->
+        <select id="c-occupation">
+            <option value="" disabled selected>Select Occupation</option>
+            <option>Student</option>
+            <option>Business</option>
+            <option>Job Holder</option>
+            <option>Freelancer</option>
+            <option>Other</option>
+        </select>
+
+        
+        <!-- Referral -->
+        <input type="text" id="c-referral" placeholder="Referral Code (Optional)">
+
+        <!-- Terms -->
+        <div class="flex items-start gap-2 mt-4 text-sm">
+            <input type="checkbox" id="agree">
+            <label for="agree">
+                I agree to the Terms & Conditions and confirm all information is correct.
+            </label>
         </div>
+
+        <!-- Button -->
+        <button onclick="nav('login-modal')" class="btn-main mt-6">
+            NEXT STEP
+        </button>
+
     </div>
+
+   </div>
 
     <div id="login-modal" class="modal-overlay">
         <div class="glass-card">
