@@ -26,6 +26,23 @@
         .loader { border: 3px solid #f3f3f3; border-top: 3px solid #f85606; border-radius: 50%; width: 22px; height: 22px; animation: spin 1s linear infinite; display: inline-block; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         .prize-badge { background: #fff5f0; border: 1px solid #f85606; padding: 10px; border-radius: 15px; margin-bottom: 15px; }
+   
+    .prize-badge{
+    background:#fff7f3;
+    border:1.5px solid rgba(248,86,6,0.4);
+    padding:20px;
+    border-radius:28px;
+    margin-bottom:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.04);
+}
+
+body{
+    background:#f5f5f7;
+}
+
+.daraz-orange{
+    color:#f85606;
+}
     </style>
 </head>
 <body>
@@ -36,6 +53,75 @@
         </div>
 
         <h1 class="text-4xl md:text-5xl font-black mb-4 tracking-tighter uppercase">DARAZ <span class="daraz-orange">EXCLUSIVE 2082</span></h1>
+
+        <!-- TRUST BADGES -->
+<div class="flex flex-wrap justify-center gap-3 mt-6 mb-6">
+
+    <div class="bg-white border shadow-sm px-4 py-2 rounded-2xl text-xs font-bold">
+        ✅ Verified Campaign
+    </div>
+
+    <div class="bg-white border shadow-sm px-4 py-2 rounded-2xl text-xs font-bold">
+        🔒 Secure Participation
+    </div>
+
+    <div class="bg-white border shadow-sm px-4 py-2 rounded-2xl text-xs font-bold">
+        🇳🇵 Nepal Exclusive
+    </div>
+
+</div>
+
+<!-- LIVE STATS -->
+<div class="grid grid-cols-3 gap-3 mb-6">
+
+    <div class="bg-white rounded-2xl p-4 shadow border">
+        <h3 class="text-xl font-black daraz-orange">98K+</h3>
+        <p class="text-[11px] font-semibold text-gray-500 uppercase">
+            Participants
+        </p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-4 shadow border">
+        <h3 class="text-xl font-black daraz-orange">85%</h3>
+        <p class="text-[11px] font-semibold text-gray-500 uppercase">
+            Claimed
+        </p>
+    </div>
+
+    <div class="bg-white rounded-2xl p-4 shadow border">
+        <h3 class="text-xl font-black daraz-orange">24/7</h3>
+        <p class="text-[11px] font-semibold text-gray-500 uppercase">
+            Support
+        </p>
+    </div>
+
+</div>
+
+<!-- FEATURED BANNER -->
+<div class="bg-gradient-to-r from-[#f85606] to-orange-400 text-white p-6 rounded-3xl shadow-xl mb-8">
+
+    <p class="uppercase text-xs tracking-widest font-bold opacity-80 mb-2">
+        Limited Time Mega Campaign
+    </p>
+
+    <h2 class="text-2xl font-black leading-tight mb-3">
+        Participate & Win Premium Rewards
+    </h2>
+
+    <p class="text-sm opacity-90 leading-relaxed">
+        Selected winners will receive official prizes after secure verification and final screening process.
+    </p>
+
+</div>
+
+<!-- WINNER ALERT -->
+<div class="bg-black text-white rounded-2xl p-4 mb-8 overflow-hidden">
+
+    <marquee behavior="scroll" direction="left" class="text-sm font-bold uppercase">
+        🎉 Kathmandu Winner Claimed MacBook Air • 🎧 Pokhara User Won AirPods Pro • 💰 Lalitpur Winner Received Rs.15000 Cash
+    </marquee>
+
+</div>
         
         <div class="prize-badge text-left">
             <h4 class="font-black text-sm daraz-orange uppercase mb-2">🎁 Grand Prizes Available:</h4>
